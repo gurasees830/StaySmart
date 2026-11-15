@@ -1,0 +1,24 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+
+# Local runtime (MongoDB binary + data, logs)
+tools/
+mongodb-data/
+logs/
+
+# Dependencies / builds
+node_modules/
+dist/
+
+# Generated or downloaded data (re-create with the backend scripts)
+**/uploads/
+**/media/
+**/data/geonames/
+**/data/image-cache/
+
+# Editor / Claude Code local settings
+.claude/
+.vscode/
+*.log
